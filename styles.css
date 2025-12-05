@@ -1,0 +1,29 @@
+.parent {
+    display: flex;
+    justify-content: space-evenly;;
+    background-color: aqua;
+    height: 250px;
+}
+
+.div1 {
+    background-color: rgb(232, 14, 14);
+    width: 100px;
+    height: 100px;
+}
+
+.div2 {
+    background-color: rgb(42, 173, 42);
+    width: 100px;
+    height: 100px;
+}
+
+.div3 {
+    background-color: rgb(59, 133, 158);
+    width: 100px;
+    height: 100px;
+}
+.div4 {
+    background-color: rgb(158, 59, 133);
+    width: 100px;
+    height: 100px;
+}

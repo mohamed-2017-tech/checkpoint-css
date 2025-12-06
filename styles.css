@@ -1,29 +1,181 @@
-.parent {
-    display: flex;
-    justify-content: space-evenly;;
-    background-color: aqua;
-    height: 250px;
+body {
+    
+    border: 2px solid rgb(238, 9, 9);
+    width:1600px;
+    height:750px;
 }
+.parent {
+ 
+   display: grid;
+        grid-template-columns: 100px 200px 300px 300px;
+        grid-template-rows: 100px 200px 300px 300px;
+    /* flex-direction: column;
+    justify-content: space-between;/* main axis */
+    /* flex-wrap: wrap;
+    align-items:center;/* cross axis */
+    background-color: aqua;
+    height: 100%; 
+} 
 
 .div1 {
+
+    /* position: sticky;
+    top: 0px;   
+    left: 0px;
+    right: 0px;
+    bottom: 0px;  */
     background-color: rgb(232, 14, 14);
-    width: 100px;
+    width: 400px;
     height: 100px;
 }
 
 .div2 {
+    grid-column-start: 2;
+    /* grid-column-end: five;
+    grid-row-start: row 1-start; */
+    justify-self: stretch;
+    grid-row-end: 3;
     background-color: rgb(42, 173, 42);
-    width: 100px;
+    width: 400px;
     height: 100px;
 }
 
 .div3 {
+      
     background-color: rgb(59, 133, 158);
-    width: 100px;
+    width: 400px;
     height: 100px;
 }
 .div4 {
     background-color: rgb(158, 59, 133);
-    width: 100px;
+    width: 400px;
     height: 100px;
 }
+
+
+
+
+
+ /* Extra small devices */
+	@media (max-width: 576px) { 
+        
+        .div1 {
+
+    /* position: sticky;
+    top: 0px;   
+    left: 0px;
+    right: 0px;
+    bottom: 0px;  */
+    background-color: rgb(232, 14, 14);
+    width:80px;
+    height: 60px;
+}
+
+.div2 {
+    grid-column-start: 2;
+    /* grid-column-end: five;
+    grid-row-start: row 1-start; */
+    justify-self: stretch;
+    grid-row-end: 3;
+    background-color: rgb(42, 173, 42);
+    width:80px;
+    height: 60px;
+}
+
+.div3 {
+      
+    background-color: rgb(59, 133, 158);
+    width:80px;
+    height: 60px;
+}
+.div4 {
+    background-color: rgb(158, 59, 133);
+    width:80px;
+    height: 60px;
+}
+
+     } 
+ /* Small devices (landscape phones, 576px and up)  */
+	@media (min-width: 576px) and (max-width: 768px) { 
+        .div1 {
+
+    /* position: sticky;
+    top: 0px;   
+    left: 0px;
+    right: 0px;
+    bottom: 0px;  */
+    background-color: rgb(232, 14, 14);
+    width: 200px;
+    height: 100px;
+}
+
+.div2 {
+    grid-column-start: 2;
+    /* grid-column-end: five;
+    grid-row-start: row 1-start; */
+    justify-self: stretch;
+    grid-row-end: 3;
+    background-color: rgb(42, 173, 42);
+    width: 200px;
+    height: 100px;
+}
+
+.div3 {
+      
+    background-color: rgb(59, 133, 158);
+    width: 200px;
+    height: 100px;
+}
+.div4 {
+    background-color: rgb(158, 59, 133);
+    width: 200px;
+    height: 100px;
+}
+
+     } 
+ /* Medium devices (tablets, 768px and up)  */
+	@media (min-width: 768px) and (max-width: 992px) {
+        .div1 {
+
+    /* position: sticky;
+    top: 0px;   
+    left: 0px;
+    right: 0px;
+    bottom: 0px;  */
+    background-color: rgb(232, 14, 14);
+    width: 400px;
+    height: 100px;
+}
+
+.div2 {
+    grid-column-start: 2;
+    /* grid-column-end: five;
+    grid-row-start: row 1-start; */
+    justify-self: stretch;
+    grid-row-end: 3;
+    background-color: rgb(42, 173, 42);
+    width: 400px;
+    height: 100px;
+}
+
+.div3 {
+      
+    background-color: rgb(59, 133, 158);
+    width: 400px;
+    height: 100px;
+}
+.div4 {
+    background-color: rgb(158, 59, 133);
+    width: 400px;
+    height: 100px;
+}
+
+    }
+
+
+        @font-face {
+            font-family: "chathurabold";
+            src: url("../font/chathura_bold_macroman/chathurabura-bold-webfont.eot");
+            font-weight: normal;
+            font-style: normal;
+        }
